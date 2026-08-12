@@ -33,7 +33,7 @@ nav .right-nav a {
 
 #hero {
   display: flex;
-  padding: 20px;
+  padding: 10px 20px 40px 20px;
   margin-top: 100px;
   align-items: end;
   justify-content: space-between;
@@ -46,4 +46,11 @@ nav .right-nav a {
 }
 #hero .cta-button span {
   font-weight: 600;
+}
+
+#img-hero {
+  height: 600px;
+  background-image: url("images/cosmos_1658266340.jpeg");
+  background-size: cover;
+  background-position: center;
 }
