@@ -7,6 +7,7 @@ body,
 html {
   height: 100%;
   background-color: #fe763c;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -28,4 +29,21 @@ nav .right-nav {
 }
 nav .right-nav a {
   font-size: 20px;
+}
+
+#hero {
+  display: flex;
+  padding: 20px;
+  margin-top: 100px;
+  align-items: end;
+  justify-content: space-between;
+}
+#hero p {
+  font-size: 20px;
+}
+#hero .cta-button {
+  font-size: 18px;
+}
+#hero .cta-button span {
+  font-weight: 600;
 }
