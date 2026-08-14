@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
 ::selection {
@@ -27,12 +28,10 @@ nav .left-nav {
   font-size: 100px;
   font-weight: 400;
 }
-nav .right-nav {
-  display: flex;
-  gap: 40px;
-}
 nav .right-nav a {
+  display: inline-block;
   position: relative;
+  margin-right: 40px;
   font-size: 20px;
   padding-bottom: 4px;
 }
@@ -42,6 +41,7 @@ nav .right-nav a::after {
   position: absolute;
   width: 100%;
   height: 1px;
+  transform-origin: left;
   background-color: #000;
   transition: transform 0.3s ease-in-out;
   transform: scaleX(0);
@@ -61,7 +61,7 @@ nav .right-nav a:hover::after {
   font-size: 20px;
 }
 #hero .cta-button {
-  font-size: 18px;
+  font-size: 19px;
 }
 #hero .cta-button span {
   font-weight: 600;
@@ -72,6 +72,18 @@ nav .right-nav a:hover::after {
   background-image: url("images/cosmos_1658266340.jpeg");
   background-size: cover;
   background-position: center;
+}
+
+footer {
+  padding: 20px auto 0;
+}
+footer .copyright a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 350px;
+  letter-spacing: -50px;
+  font-weight: 500;
 }
 
 /* mediaquery */
@@ -101,5 +113,9 @@ nav .right-nav a:hover::after {
   #hero .cta-button {
     border: 1.5px solid #000;
     padding: 10px 20px;
+  }
+  footer .copyright a {
+    font-size: 120px;
+    letter-spacing: -10px;
   }
 }
