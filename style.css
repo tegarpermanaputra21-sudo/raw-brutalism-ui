@@ -62,6 +62,11 @@ nav .right-nav a:hover::after {
 }
 #hero .cta-button {
   font-size: 19px;
+  transition: all 0.3s;
+}
+#hero .cta-button:hover {
+  color: #fe763c;
+  background-color: #000;
 }
 #hero .cta-button span {
   font-weight: 600;
@@ -79,7 +84,6 @@ footer {
 }
 footer .copyright a {
   display: flex;
-  align-items: center;
   justify-content: center;
   font-size: 350px;
   letter-spacing: -50px;
